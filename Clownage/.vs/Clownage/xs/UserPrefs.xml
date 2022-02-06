@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{9C228793-FCE9-D817-5D34-834388322AB1}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/EnemyAIBehavior.cs">
+    <Files>
+      <File FileName="Assets/Scripts/EnemyAIBehavior.cs" Line="4" Column="2" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="09d214c1-3705-4462-ade4-28f82050b322" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
