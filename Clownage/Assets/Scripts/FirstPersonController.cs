@@ -68,6 +68,8 @@ namespace StarterAssets
 		private CharacterController _controller;
 		private StarterAssetsInputs _input;
 		private GameObject _mainCamera;
+		private bool _canDoubleJump = true;
+		private float _doubleJumpTimer = 0;
 
 		private const float _threshold = 0.01f;
 		
@@ -187,6 +189,8 @@ namespace StarterAssets
 			{
 				// reset the fall timeout timer
 				_fallTimeoutDelta = FallTimeout;
+				_canDoubleJump = true;
+				_doubleJumpTimer = 0.0f;
 
 				// stop our velocity dropping infinitely when grounded
 				if (_verticalVelocity < 0.0f)
@@ -207,21 +211,30 @@ namespace StarterAssets
 					_jumpTimeoutDelta -= Time.deltaTime;
 				}
 			}
+
 			else
 			{
 				// reset the jump timeout timer
 				_jumpTimeoutDelta = JumpTimeout;
+
+				if (_input.jump && _canDoubleJump)
+				{	
+					// the square root of H * -2 * G = how much velocity needed to reach desired height
+					_verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
+					if (_fallTimeoutDelta <= 0.0f)
+					{
+						_canDoubleJump = false;
+					}
+				}
 
 				// fall timeout
 				if (_fallTimeoutDelta >= 0.0f)
 				{
 					_fallTimeoutDelta -= Time.deltaTime;
 				}
-
 				// if we are not grounded, do not jump
-				_input.jump = false;
+				_input.jump = false; 
 			}
-
 			// apply gravity over time if under terminal (multiply by delta time twice to linearly speed up over time)
 			if (_verticalVelocity < _terminalVelocity)
 			{
