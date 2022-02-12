@@ -10,7 +10,7 @@ public class GameStateManager : MonoBehaviour
     [SerializeField] private string endScreen;
 
     public static GameStateManager _instance;
-    private static GAMESTATE gameState;
+    public static GAMESTATE gameState;
 
     public enum GAMESTATE
     {
@@ -32,11 +32,20 @@ public class GameStateManager : MonoBehaviour
         {
             Destroy(this);
         }
-        gameState = GAMESTATE.SLOWDOWNTIME;
     }
 
     public GAMESTATE getCurrentState()
     {
         return gameState;
+    }
+    
+    public void SlowDownTime()
+    {
+        gameState = GAMESTATE.SLOWDOWNTIME;
+    }
+
+    public void ReturnToNormalTime()
+    {
+        gameState = GAMESTATE.PLAYING;
     }
 }

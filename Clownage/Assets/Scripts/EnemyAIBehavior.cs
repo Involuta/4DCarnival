@@ -13,10 +13,6 @@ public class EnemyAIBehavior : MonoBehaviour
 
     public int health;
 
-    //Speed Settings
-    private float originalSpeed;
-    private float currentSpeed;
-
     //Patrolling
     public Vector3 walkPoint;
     public float walkPointRange;
@@ -27,15 +23,13 @@ public class EnemyAIBehavior : MonoBehaviour
     bool alreadyAttacked;
 
     //States
-    public float sightRange, attackRange;
+    public float sightRange, attackRange, meleeRange;
     public bool playerInSightRange, playerInAttackRange;
 
     private void Awake()
     {
         player = GameObject.Find("PlayerCapsule").transform;
         agent = GetComponent<NavMeshAgent>();
-        originalSpeed = agent.speed;
-        currentSpeed = agent.speed;
     }
 
     private void Update()
@@ -48,20 +42,6 @@ public class EnemyAIBehavior : MonoBehaviour
         if (playerInSightRange && !playerInAttackRange) ChasePlayer();
         if (playerInAttackRange) AttackPlayer();
 
-        //Check if time is getting slowed
-        if (GameStateManager._instance != null)
-        {
-            if (GameStateManager._instance.getCurrentState() == GameStateManager.GAMESTATE.SLOWDOWNTIME)
-            {
-                currentSpeed = originalSpeed / 2;
-                agent.speed = currentSpeed;
-                Debug.Log("W");
-            }
-            else if (GameStateManager._instance.getCurrentState() == GameStateManager.GAMESTATE.PLAYING)
-            {
-                currentSpeed = originalSpeed;
-            }
-        }
     }
 
     private void Patrol()
@@ -111,7 +91,22 @@ public class EnemyAIBehavior : MonoBehaviour
             //Attack code here
             
             alreadyAttacked = true;
-            Invoke(nameof(ResetAttack), timeBetweenAttacks);
+            
+        }
+    }
+
+    //Melee attack
+    private IEnumerator SlapAttack()
+    {
+        RaycastHit hit;
+        yield return new WaitForSeconds(timeBetweenAttacks);
+        //Check if the player is in range
+        if(Physics.Raycast(transform.position, transform.forward, out hit, meleeRange))
+        {
+            if(hit.rigidbody.tag == "Player")
+            {
+                Debug.Log("Player Hit");
+            }
         }
     }
 
