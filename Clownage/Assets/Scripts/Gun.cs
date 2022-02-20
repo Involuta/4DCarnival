@@ -18,7 +18,7 @@ namespace StarterAssets
         // Update is called once per frame
         void Update()
         {
-            if (_input.shoot)
+            if (_input.shoot && !_input.isPaused)
             {
                 Shoot();
                 _input.shoot = false;

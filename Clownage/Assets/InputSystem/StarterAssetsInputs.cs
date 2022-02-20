@@ -13,6 +13,8 @@ namespace StarterAssets
 		public bool jump;
 		public bool sprint;
 		public bool shoot;
+		public bool isPaused { get; private set; }
+		public UnityEngine.Events.UnityAction<bool> pauseEvents;
 
 		[Header("Movement Settings")]
 		public bool analogMovement;
@@ -51,6 +53,14 @@ namespace StarterAssets
 		{
 			ShootInput(value.isPressed);
 		}
+		public void OnPause(InputValue value)
+		{
+			if (value.isPressed)
+			{
+				PauseInput();
+			}
+			//pauseMenu.SendMessage("OnPause", value);
+		}
 #else
 	// old input sys if we do decide to have it (most likely wont)...
 #endif
@@ -79,6 +89,12 @@ namespace StarterAssets
 		public void ShootInput(bool newShootState)
 		{
 			shoot = newShootState;
+		}
+
+		public void PauseInput()
+		{
+			isPaused = !isPaused;
+			pauseEvents(isPaused);
 		}
 
 #if !UNITY_IOS || !UNITY_ANDROID
