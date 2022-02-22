@@ -26,7 +26,7 @@ public class EnemyAIBehavior : MonoBehaviour
     public float sightRange, attackRange, meleeRange;
     public bool playerInSightRange, playerInAttackRange;
 
-    private void Awake()
+    private void Start()
     {
         player = GameObject.Find("PlayerCapsule").transform;
         agent = GetComponent<NavMeshAgent>();
@@ -88,10 +88,7 @@ public class EnemyAIBehavior : MonoBehaviour
 
         if (!alreadyAttacked)
         {
-            //Attack code here
-            
-            alreadyAttacked = true;
-            
+            alreadyAttacked = true;   
         }
     }
 
