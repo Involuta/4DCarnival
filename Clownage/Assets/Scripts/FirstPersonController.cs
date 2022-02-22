@@ -12,7 +12,7 @@ namespace StarterAssets
 	public class FirstPersonController : MonoBehaviour
 	{
 		[Header("Sensitivity")]
-		public float cameraSensitivity = 5f;
+		public float cameraSensitivity = 4.5f;
 
 		[Header("Player")]
 		[Tooltip("Move speed of the character in m/s")]
