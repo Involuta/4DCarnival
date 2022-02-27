@@ -15,6 +15,8 @@ namespace StarterAssets
 		public bool shoot;
 		public bool isPaused { get; private set; }
 		public UnityEngine.Events.UnityAction<bool> pauseEvents;
+		public bool reload;
+		public bool switchWeapon;
 
 		[Header("Movement Settings")]
 		public bool analogMovement;
@@ -61,6 +63,14 @@ namespace StarterAssets
 			}
 			//pauseMenu.SendMessage("OnPause", value);
 		}
+		public void OnReload(InputValue value)
+		{
+			ReloadInput(value.isPressed);
+		}
+		public void OnSwitchWeapon(InputValue value)
+		{
+			SwitchWeaponInput(value.isPressed);
+		}
 #else
 	// old input sys if we do decide to have it (most likely wont)...
 #endif
@@ -96,6 +106,15 @@ namespace StarterAssets
 			isPaused = !isPaused;
 			pauseEvents(isPaused);
 		}
+		public void ReloadInput(bool newReloadState)
+		{
+			reload = newReloadState;
+		}
+		public void SwitchWeaponInput(bool newState)
+		{
+			switchWeapon = newState;
+		}
+
 
 #if !UNITY_IOS || !UNITY_ANDROID
 
