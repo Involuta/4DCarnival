@@ -11,7 +11,7 @@ public class EnemyAIBehavior : MonoBehaviour
 
     public LayerMask whatIsGround, whatIsPlayer;
 
-    public int health;
+    public float damage; 
 
     //Patrolling
     public Vector3 walkPoint;
@@ -88,8 +88,9 @@ public class EnemyAIBehavior : MonoBehaviour
 
         if (!alreadyAttacked)
         {
-            //Attack code here
             
+            //Attack code here
+            StartCoroutine(SlapAttack());
             alreadyAttacked = true;
             
         }
@@ -101,13 +102,15 @@ public class EnemyAIBehavior : MonoBehaviour
         RaycastHit hit;
         yield return new WaitForSeconds(timeBetweenAttacks);
         //Check if the player is in range
-        if(Physics.Raycast(transform.position, transform.forward, out hit, meleeRange))
+        if (Physics.Raycast(transform.position, transform.forward, out hit, meleeRange, whatIsPlayer))
         {
             if(hit.rigidbody.tag == "Player")
             {
                 Debug.Log("Player Hit");
+                hit.rigidbody.GetComponent<TakeDamage>().TakeDamageNow(damage);
             }
         }
+        ResetAttack();
     }
 
     private void ResetAttack()
@@ -115,17 +118,6 @@ public class EnemyAIBehavior : MonoBehaviour
         alreadyAttacked = false;
     }
 
-    public void TakeDamage(int damage)
-    {
-        health -= damage;
-
-        if (health < 0) Invoke(nameof(DestroyEnemy), .5f);
-    }
-
-    private void DestroyEnemy()
-    {
-        Destroy(gameObject);
-    }
 
     private void OnDrawGizmosSelected()
     {
