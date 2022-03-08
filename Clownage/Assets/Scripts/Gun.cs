@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using System.Collections;
+using TMPro;
 
 namespace StarterAssets
 {
@@ -27,6 +28,12 @@ namespace StarterAssets
             _input.shoot = false;
             magazine = magazineSize;
             reloading = false;
+            GameObject[] hudElems = GameObject.FindGameObjectsWithTag("HUD");
+            foreach (GameObject elem in hudElems)
+            {
+                if (elem.name == "Ammo readout")
+                    ammoDisplay = elem.GetComponent<Text>();
+            }
         }
 
         // Update is called once per frame

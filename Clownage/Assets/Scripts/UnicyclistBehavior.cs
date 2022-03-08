@@ -22,11 +22,17 @@ public class UnicyclistBehavior : MonoBehaviour
 
     public string attackMode;
 
+    public Sprite[] sprites;
+    public uint fps;
+
+    private SpriteRenderer spriteRenderer;
+
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.Find("PlayerCapsule").transform;
         agent = GetComponent<NavMeshAgent>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
 
         agent.autoBraking = false;
 
@@ -36,7 +42,6 @@ public class UnicyclistBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.LookAt(player);
 
         // Choose the next destination point when the agent gets close to the current one.
         if (attackMode == "circling")
@@ -47,6 +52,7 @@ public class UnicyclistBehavior : MonoBehaviour
         {
             agent.SetDestination(player.position);
         }
+        UpdateSprite();
     }
 
     async void AttackSwitcher() //loop that runs a new SwitchAttack task every time the current SwitchAttack task ends
@@ -117,4 +123,11 @@ public class UnicyclistBehavior : MonoBehaviour
         // Set the agent to go to the currently selected destination.
         agent.SetDestination(radialPointList[currentRadialPoint]);
     }
+
+    void UpdateSprite()
+    {
+        int frame = (int)(Time.time / (1.0f / (float)fps));
+        spriteRenderer.sprite = sprites[frame % sprites.Length];
+    }
+
 }

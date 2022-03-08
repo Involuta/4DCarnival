@@ -76,7 +76,6 @@ public class EnemyAIBehavior : MonoBehaviour
 
     private void ChasePlayer()
     {
-        transform.LookAt(player);
         agent.SetDestination(player.position);
     }
 
@@ -84,8 +83,6 @@ public class EnemyAIBehavior : MonoBehaviour
     {
         //Make sure the enemy doesn't move
         agent.SetDestination(transform.position);
-
-        transform.LookAt(player);
 
         if (!alreadyAttacked)
         {

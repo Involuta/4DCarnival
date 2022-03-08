@@ -21,7 +21,7 @@ public class PauseBehavior : MonoBehaviour
     void Start()
     {
         canvas.enabled = false;
-        inputs.pauseEvents += val => { Debug.Log(val.ToString()); OnPauseEvent(); };
+        inputs.pauseEvents += val => { OnPauseEvent(); };
     }
 
     // Update is called once per frame
@@ -49,7 +49,7 @@ public class PauseBehavior : MonoBehaviour
 
     void OnPauseEvent()
     {
-        Debug.Log("received pause");
+        //Debug.Log("received pause");
         if (!inputs.isPaused)
         {
             Unpause();

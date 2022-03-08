@@ -59,7 +59,7 @@ public class CycleAnimation : MonoBehaviour
         int oldIdx = frameIdx;
         if (imagesToCycle.Length > 0)
             frameIdx = ((int)(Time.time * imagesToCycle.Length)) % imagesToCycle.Length;
-        if (oldIdx != frameIdx)
+        //if (oldIdx != frameIdx)
             //Debug.Log(frameIdx);
         spriteRenderer.sprite = imagesToCycle[frameIdx];
     }

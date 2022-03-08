@@ -12,6 +12,7 @@ public class Target : MonoBehaviour
         if (health <= 0){
             Die();
         }
+        Debug.Log(gameObject.name + " says ow");
     }
 
     public void Die(){
