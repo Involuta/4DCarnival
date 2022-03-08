@@ -10,9 +10,13 @@ public class SpawningEnemies : MonoBehaviour
 
     public GameObject slapper;
     public GameObject unicyclist;
-    public float spawnDelay;
+    private GameObject enemy;
 
-    GameObject enemy;
+    public LayerMask whatIsPlayer;
+    public float spawnRadius;
+    public bool playerInSpawnRange;
+
+    public float spawnDelay;
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +27,7 @@ public class SpawningEnemies : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        playerInSpawnRange = Physics.CheckSphere(transform.position, spawnRadius, whatIsPlayer);
     }
 
     async void SpawnEnemiesLoop()
@@ -36,10 +40,19 @@ public class SpawningEnemies : MonoBehaviour
 
         while (true)
         {
+            await CheckPlayerProximity();
+            
             await SpawnEnemy();
         }
     }
 
+    async Task CheckPlayerProximity()
+    {
+        while (!playerInSpawnRange)
+        {
+            await Task.Yield();
+        }
+    }
     async Task SpawnEnemy()
     {
         int enemySelector = r.Next(1, 6);

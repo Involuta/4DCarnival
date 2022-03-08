@@ -22,6 +22,7 @@ public class TakeDamage : MonoBehaviour
     }
     private void DestroyTarget()
     {
+        Debug.Log("Death by Clown.");
         Destroy(gameObject);
     }
 }

@@ -45,6 +45,8 @@ GameObject:
   - component: {fileID: 5808710572413208128}
   - component: {fileID: 5808710572413208190}
   - component: {fileID: 3820223772537407765}
+  - component: {fileID: 6684086178840953517}
+  - component: {fileID: 4704333116200087444}
   m_Layer: 0
   m_Name: CycEnemyAI
   m_TagString: Untagged
@@ -163,3 +165,59 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1541d93ff29cb476dab2bfb617e8814a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  radialPointList:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  currentRadialPoint: 0
+  radius: 7
+  radialDirection: 1
+  radPointSet: 0
+  attackMode: circling
+--- !u!114 &6684086178840953517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5808710572413208188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 801fed78597b24e9e91d49e50214eb60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  castDistance: 0.2
+  hitboxRadius: 0.85
+  whatIsPlayer:
+    serializedVersion: 2
+    m_Bits: 2048
+  damage: 12
+  hitboxIsActive: 1
+  timeBetweenAttacks: 2
+--- !u!114 &4704333116200087444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5808710572413208188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc09aa922010dc24d8c1919969d3a08c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 20

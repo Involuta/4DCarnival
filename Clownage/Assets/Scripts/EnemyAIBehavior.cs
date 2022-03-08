@@ -20,13 +20,13 @@ public class EnemyAIBehavior : MonoBehaviour
 
     //Attacking
     public float timeBetweenAttacks;
-    bool alreadyAttacked;
+    public bool alreadyAttacked;
 
     //States
     public float sightRange, attackRange, meleeRange;
     public bool playerInSightRange, playerInAttackRange;
 
-    private void Awake()
+    private void Start()
     {
         player = GameObject.Find("PlayerCapsule").transform;
         agent = GetComponent<NavMeshAgent>();
@@ -76,6 +76,7 @@ public class EnemyAIBehavior : MonoBehaviour
 
     private void ChasePlayer()
     {
+        transform.LookAt(player);
         agent.SetDestination(player.position);
     }
 
@@ -106,7 +107,7 @@ public class EnemyAIBehavior : MonoBehaviour
         {
             if(hit.rigidbody.tag == "Player")
             {
-                Debug.Log("Player Hit");
+                Debug.Log("Player Hit by Slapper");
                 hit.rigidbody.GetComponent<TakeDamage>().TakeDamageNow(damage);
             }
         }
@@ -122,7 +123,7 @@ public class EnemyAIBehavior : MonoBehaviour
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, attackRange);
+        Gizmos.DrawWireSphere(transform.position, meleeRange);
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, attackRange);
     }
