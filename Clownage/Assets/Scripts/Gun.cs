@@ -13,6 +13,7 @@ namespace StarterAssets
         public int magazineSize = 30;
         private int magazine;
         public int reserveAmmo = 90;
+        public int maxReserveAmmo = 90;
         public float reloadSpeed = 2.0f;
         public Text ammoDisplay; 
         private StarterAssetsInputs _input;
@@ -34,6 +35,7 @@ namespace StarterAssets
                 if (elem.name == "Ammo readout")
                     ammoDisplay = elem.GetComponent<Text>();
             }
+            reserveAmmo = maxReserveAmmo;
         }
 
         // Update is called once per frame

@@ -9,12 +9,22 @@ public class HealthInformation : MonoBehaviour
 
     public float Health { get => health; set => health = value; }
     public float MaxHealth { get => maxHealth; set => maxHealth = value; }
+    public float HealthPickupValue = 50;
 
     // Start is called before the first frame update
     void Start()
     {
         health = 100;
         maxHealth = health;
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Health")
+        {
+            health = health + Mathf.Min(HealthPickupValue, maxHealth - health);
+            Destroy(other.gameObject);
+        }
     }
 
 }

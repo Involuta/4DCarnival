@@ -12,6 +12,7 @@ namespace StarterAssets
         public int magazineSize = 30;
         private int magazine;
         public int reserveAmmo = 90;
+        public int maxReserveAmmo = 90;
 
         private StarterAssetsInputs _input;
         public Camera gunCam;
@@ -27,6 +28,7 @@ namespace StarterAssets
             _input = GetComponentInParent<StarterAssetsInputs>();
             bullet.GetComponent<BulletParticle>().damage = damage;
             magazine = magazineSize;
+            reserveAmmo = maxReserveAmmo;
         }
 
         // Update is called once per frame

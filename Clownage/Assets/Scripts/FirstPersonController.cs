@@ -57,6 +57,10 @@ namespace StarterAssets
 		// cinemachine
 		private float _cinemachineTargetPitch;
 
+		// guns
+		public Sniper sniper;
+		public Gun smg;
+
 		// player
 		private float _speed;
 		private float _rotationVelocity;
@@ -265,5 +269,17 @@ namespace StarterAssets
 			// when selected, draw a gizmo in the position of, and matching radius of, the grounded collider
 			Gizmos.DrawSphere(new Vector3(transform.position.x, transform.position.y - GroundedOffset, transform.position.z), GroundedRadius);
 		}
+
+		void OnTriggerEnter(Collider other)
+        {
+            if (other.gameObject.tag == "Ammo")
+            {
+
+				sniper.reserveAmmo = sniper.maxReserveAmmo;
+				smg.reserveAmmo = smg.maxReserveAmmo;
+
+				Destroy(other.gameObject);
+			}
+        }
 	}
 }
