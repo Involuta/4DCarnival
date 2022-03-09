@@ -42,6 +42,8 @@ public class UnicyclistBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        transform.LookAt(player);
+        if(player.transform.position.y <= transform.position.y) transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, transform.eulerAngles.z);
 
         // Choose the next destination point when the agent gets close to the current one.
         if (attackMode == "circling")
