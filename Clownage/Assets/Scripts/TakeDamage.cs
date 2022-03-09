@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TakeDamage : MonoBehaviour
 {
@@ -22,7 +23,7 @@ public class TakeDamage : MonoBehaviour
     }
     private void DestroyTarget()
     {
-        Debug.Log("Death by Clown.");
+        SceneManager.LoadScene("GameOver");
         Destroy(gameObject);
     }
 }

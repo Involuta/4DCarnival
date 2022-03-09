@@ -917,6 +917,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf4b588cb4cf648a19742ccdb148f037, type: 3}
+--- !u!1 &223513373 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: bfff06aaff363a847ad37bf592364e6b, type: 3}
+  m_PrefabInstance: {fileID: 175220376}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &223513374
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223513373}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6265776187016570482, guid: bfff06aaff363a847ad37bf592364e6b, type: 3}
 --- !u!1001 &250887305
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1099,6 +1118,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 54
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &405178875 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: bfff06aaff363a847ad37bf592364e6b, type: 3}
+  m_PrefabInstance: {fileID: 1119034426}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &405178876
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405178875}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6265776187016570482, guid: bfff06aaff363a847ad37bf592364e6b, type: 3}
 --- !u!1 &457703934
 GameObject:
   m_ObjectHideFlags: 0
@@ -1111,7 +1149,7 @@ GameObject:
   - component: {fileID: 457703937}
   - component: {fileID: 457703936}
   - component: {fileID: 457703938}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6551,6 +6589,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0271df749728104eac22c3d897fd8ce, type: 3}
+--- !u!1 &752858444 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: bfff06aaff363a847ad37bf592364e6b, type: 3}
+  m_PrefabInstance: {fileID: 1734712180}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &752858445
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 752858444}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6265776187016570482, guid: bfff06aaff363a847ad37bf592364e6b, type: 3}
 --- !u!1001 &802712105
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7607,7 +7664,7 @@ GameObject:
   - component: {fileID: 1182953651}
   - component: {fileID: 1182953650}
   - component: {fileID: 1182953653}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: Smg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7804,6 +7861,25 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -3660275907326674588, guid: 94cb6aadc81fe4388aabd43d97a3f0f0, type: 3}
+--- !u!1 &1255597908 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: bfff06aaff363a847ad37bf592364e6b, type: 3}
+  m_PrefabInstance: {fileID: 802712105}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1255597909
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1255597908}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6265776187016570482, guid: bfff06aaff363a847ad37bf592364e6b, type: 3}
 --- !u!1001 &1267724632
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8394,6 +8470,25 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 20189829d38af49aeb7572d46c392c21, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94cb6aadc81fe4388aabd43d97a3f0f0, type: 3}
+--- !u!1 &1441929995 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: bfff06aaff363a847ad37bf592364e6b, type: 3}
+  m_PrefabInstance: {fileID: 1669577591}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1441929996
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441929995}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6265776187016570482, guid: bfff06aaff363a847ad37bf592364e6b, type: 3}
 --- !u!1001 &1446174553
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9585,7 +9680,7 @@ GameObject:
   - component: {fileID: 1893546431}
   - component: {fileID: 1893546430}
   - component: {fileID: 1893546429}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: Sniper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10176,6 +10271,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2010057985 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: bfff06aaff363a847ad37bf592364e6b, type: 3}
+  m_PrefabInstance: {fileID: 1591710158}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2010057986
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010057985}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6265776187016570482, guid: bfff06aaff363a847ad37bf592364e6b, type: 3}
 --- !u!1 &2011233497
 GameObject:
   m_ObjectHideFlags: 0
@@ -10187,7 +10301,7 @@ GameObject:
   - component: {fileID: 2011233498}
   - component: {fileID: 2011233500}
   - component: {fileID: 2011233499}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15049,7 +15163,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2021375792}
   - component: {fileID: 2021375793}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: Guns
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15800,7 +15914,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8600168136146303591, guid: 827c2a3b51be4aa43b9311224a112471, type: 3}
       propertyPath: m_Layer
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8600168136146303591, guid: 827c2a3b51be4aa43b9311224a112471, type: 3}
       propertyPath: m_StaticEditorFlags
