@@ -390,6 +390,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2859109400176981367, guid: ed86c75c637e5426996d7ebe88256357, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0ee14092a8ffb46f3b5617c2a09945bb, type: 2}
     - target: {fileID: 919132149155446097, guid: ed86c75c637e5426996d7ebe88256357, type: 3}
       propertyPath: m_Name
       value: GameWinnerLight (4)
@@ -678,6 +682,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2859109400176981367, guid: ed86c75c637e5426996d7ebe88256357, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 47c2be8a59efe457b8d82187a9b656c3, type: 2}
     - target: {fileID: 919132149155446097, guid: ed86c75c637e5426996d7ebe88256357, type: 3}
       propertyPath: m_Name
       value: GameWinnerLight
@@ -924,6 +932,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2859109400176981367, guid: ed86c75c637e5426996d7ebe88256357, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: af9fa72e86f4c41e2bf1e58c6c818720, type: 2}
     - target: {fileID: 919132149155446097, guid: ed86c75c637e5426996d7ebe88256357, type: 3}
       propertyPath: m_Name
       value: GameWinnerLight (1)
@@ -1302,6 +1314,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2859109400176981367, guid: ed86c75c637e5426996d7ebe88256357, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f29455a8967d04578950df20542ac0b9, type: 2}
     - target: {fileID: 919132149155446097, guid: ed86c75c637e5426996d7ebe88256357, type: 3}
       propertyPath: m_Name
       value: GameWinnerLight (3)
@@ -1368,6 +1384,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2859109400176981367, guid: ed86c75c637e5426996d7ebe88256357, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 43d3d12652578439a90bd662e085133a, type: 2}
     - target: {fileID: 919132149155446097, guid: ed86c75c637e5426996d7ebe88256357, type: 3}
       propertyPath: m_Name
       value: GameWinnerLight (2)
@@ -1434,6 +1454,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2859109400176981367, guid: ed86c75c637e5426996d7ebe88256357, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8735694daeb88484387a0e22794e6c56, type: 2}
     - target: {fileID: 919132149155446097, guid: ed86c75c637e5426996d7ebe88256357, type: 3}
       propertyPath: m_Name
       value: GameWinnerLight (5)
@@ -1508,6 +1532,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2859109400176981367, guid: 5bb18a9db97784267b75933ae08598ee, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 20189829d38af49aeb7572d46c392c21, type: 2}
+    - target: {fileID: -895306380916907690, guid: 5bb18a9db97784267b75933ae08598ee, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 20189829d38af49aeb7572d46c392c21, type: 2}
     - target: {fileID: 919132149155446097, guid: 5bb18a9db97784267b75933ae08598ee, type: 3}
       propertyPath: m_Name
       value: Counter
