@@ -10,6 +10,7 @@ public class SpawningEnemies : MonoBehaviour
 
     public GameObject slapper;
     public GameObject unicyclist;
+    public GameObject bigboi;
     private GameObject enemy;
 
     public LayerMask whatIsPlayer;
@@ -55,15 +56,19 @@ public class SpawningEnemies : MonoBehaviour
     }
     async Task SpawnEnemy()
     {
-        int enemySelector = r.Next(1, 6);
+        int enemySelector = r.Next(1, 7);
 
-        if (enemySelector > 3)
+        if (1 <= enemySelector && enemySelector <= 4)
         {
-            enemy = Instantiate(unicyclist, GetComponent<Transform>().position, GetComponent<Transform>().rotation);
+            enemy = Instantiate(bigboi, GetComponent<Transform>().position, GetComponent<Transform>().rotation);
         }
-        else
+        if (5 <= enemySelector && enemySelector <= 6)
         {
-            enemy = Instantiate(slapper, GetComponent<Transform>().position, GetComponent<Transform>().rotation);
+            enemy = Instantiate(bigboi, GetComponent<Transform>().position, GetComponent<Transform>().rotation);
+        }
+        if (enemySelector == 7)
+        {
+            enemy = Instantiate(bigboi, GetComponent<Transform>().position, GetComponent<Transform>().rotation);
         }
 
         float nextEnemySpawnTime = Time.time + spawnDelay;

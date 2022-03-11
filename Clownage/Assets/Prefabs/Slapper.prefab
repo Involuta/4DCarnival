@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8506586579387899943}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.51, y: 1.7, z: 5.4}
+  m_LocalPosition: {x: 5.51, y: 1.5, z: 5.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8506586579582922456}
@@ -157,7 +157,7 @@ GameObject:
   - component: {fileID: 8506586580945616476}
   - component: {fileID: 8506586580945616477}
   - component: {fileID: 1466218543492978871}
-  - component: {fileID: 4508005508563339281}
+  - component: {fileID: 2205357120944130692}
   m_Layer: 10
   m_Name: EnemySprite
   m_TagString: Untagged
@@ -173,8 +173,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8506586580945616472}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 0}
-  m_LocalScale: {x: 0.65, y: 0.65, z: 0.65}
+  m_LocalPosition: {x: 0, y: 0.8, z: 0}
+  m_LocalScale: {x: 0.65000004, y: 0.65, z: 0.65}
   m_Children: []
   m_Father: {fileID: 8506586579582922456}
   m_RootOrder: 0
@@ -219,7 +219,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -5940136557075087187, guid: e999e09454b4929499a2cf620314f7c6, type: 3}
+  m_Sprite: {fileID: 4174193996130254027, guid: e9d7483dde8134b3da29d8a81ac79d6e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -243,10 +243,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imagesToCycle:
-  - {fileID: -5940136557075087187, guid: e999e09454b4929499a2cf620314f7c6, type: 3}
-  - {fileID: -4941095221546048146, guid: e999e09454b4929499a2cf620314f7c6, type: 3}
-  - {fileID: -7076105629189291911, guid: e999e09454b4929499a2cf620314f7c6, type: 3}
-  - {fileID: 745003671115689532, guid: e999e09454b4929499a2cf620314f7c6, type: 3}
+  - {fileID: 4174193996130254027, guid: e9d7483dde8134b3da29d8a81ac79d6e, type: 3}
+  - {fileID: -2600557071794891326, guid: e9d7483dde8134b3da29d8a81ac79d6e, type: 3}
+  - {fileID: -7395134176181453526, guid: e9d7483dde8134b3da29d8a81ac79d6e, type: 3}
+  - {fileID: -1425052263427770032, guid: e9d7483dde8134b3da29d8a81ac79d6e, type: 3}
+  neutralImages:
+  - {fileID: 4174193996130254027, guid: e9d7483dde8134b3da29d8a81ac79d6e, type: 3}
+  - {fileID: -2600557071794891326, guid: e9d7483dde8134b3da29d8a81ac79d6e, type: 3}
+  - {fileID: -7395134176181453526, guid: e9d7483dde8134b3da29d8a81ac79d6e, type: 3}
+  - {fileID: -1425052263427770032, guid: e9d7483dde8134b3da29d8a81ac79d6e, type: 3}
+  attackImages:
+  - {fileID: 2469729700230397447, guid: 06de9735a26ec452d896fcd6db3f3071, type: 3}
+  - {fileID: 3768087523399861449, guid: 06de9735a26ec452d896fcd6db3f3071, type: 3}
+  - {fileID: -4517447319086799401, guid: 06de9735a26ec452d896fcd6db3f3071, type: 3}
+  - {fileID: 1580438785262875613, guid: 06de9735a26ec452d896fcd6db3f3071, type: 3}
   fps: 6
 --- !u!895512359 &1466218543492978871
 AimConstraint:
@@ -272,7 +282,7 @@ AimConstraint:
   m_Sources:
   - sourceTransform: {fileID: 0}
     weight: 1
---- !u!114 &4508005508563339281
+--- !u!114 &2205357120944130692
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

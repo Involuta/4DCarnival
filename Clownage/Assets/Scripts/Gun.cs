@@ -43,6 +43,7 @@ namespace StarterAssets
         {
             if (reloading)
             {
+                Debug.Log("am i real?");
                 return;
             }
             if (_input.shoot && !_input.isPaused && Time.time >= timeUntilShoot && magazine > 0)

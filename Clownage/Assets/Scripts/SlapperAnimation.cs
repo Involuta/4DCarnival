@@ -6,7 +6,7 @@ using UnityEngine.Animations;
 public class SlapperAnimation : MonoBehaviour
 {
     private EnemyAIBehavior ai;
-    private CycleAnimation walkAnimation;
+    private CycleAnimation animator;
 
     private AimConstraint aim;
 
@@ -24,7 +24,7 @@ public class SlapperAnimation : MonoBehaviour
         aim.AddSource(constraint);
 
         ai = gameObject.GetComponentInParent<EnemyAIBehavior>();
-        walkAnimation = gameObject.GetComponent<CycleAnimation>();
+        animator = gameObject.GetComponent<CycleAnimation>();
     }
 
     // Update is called once per frame
@@ -32,11 +32,11 @@ public class SlapperAnimation : MonoBehaviour
     {
         if (!ai.playerInAttackRange)
         {
-            walkAnimation.enabled = true;
+            animator.imagesToCycle = animator.neutralImages;
         }
         else
         {
-            walkAnimation.enabled = false;
+            animator.imagesToCycle = animator.attackImages;
         }
     }
 }

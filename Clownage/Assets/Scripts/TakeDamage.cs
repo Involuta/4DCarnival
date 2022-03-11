@@ -24,6 +24,5 @@ public class TakeDamage : MonoBehaviour
     private void DestroyTarget()
     {
         SceneManager.LoadScene("GameOver");
-        Destroy(gameObject);
     }
 }

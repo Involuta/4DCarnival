@@ -8724,6 +8724,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slapper: {fileID: 8506586579387899943, guid: bf828ff813ee04545b1650997a6a017b, type: 3}
   unicyclist: {fileID: 5808710572021225839, guid: e0b0c9d617c454fc188f4a8878dfdc20, type: 3}
+  bigboi: {fileID: 8053133323977706997, guid: 1958a3992145442abbceaf98801803f6, type: 3}
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 2048

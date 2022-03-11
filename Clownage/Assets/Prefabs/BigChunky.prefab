@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8053133323487548302}
   - component: {fileID: 8053133323487548303}
   - component: {fileID: 978970539776636261}
-  - component: {fileID: 2828447877907621315}
+  - component: {fileID: 8514459217222489288}
   m_Layer: 10
   m_Name: EnemySprite
   m_TagString: Untagged
@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8053133323487548298}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 0.65, y: 0.65, z: 0.65}
   m_Children: []
   m_Father: {fileID: 8053133324172722954}
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -5940136557075087187, guid: e999e09454b4929499a2cf620314f7c6, type: 3}
+  m_Sprite: {fileID: 4485300514341696304, guid: 1b2844a3f36314bb0aecc939986094ad, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -98,10 +98,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imagesToCycle:
-  - {fileID: -5940136557075087187, guid: e999e09454b4929499a2cf620314f7c6, type: 3}
-  - {fileID: -4941095221546048146, guid: e999e09454b4929499a2cf620314f7c6, type: 3}
-  - {fileID: -7076105629189291911, guid: e999e09454b4929499a2cf620314f7c6, type: 3}
-  - {fileID: 745003671115689532, guid: e999e09454b4929499a2cf620314f7c6, type: 3}
+  - {fileID: 4485300514341696304, guid: 1b2844a3f36314bb0aecc939986094ad, type: 3}
+  neutralImages:
+  - {fileID: 4485300514341696304, guid: 1b2844a3f36314bb0aecc939986094ad, type: 3}
+  - {fileID: 812647588525811290, guid: 1b2844a3f36314bb0aecc939986094ad, type: 3}
+  - {fileID: 40697045896733108, guid: 1b2844a3f36314bb0aecc939986094ad, type: 3}
+  - {fileID: -3439004525181666891, guid: 1b2844a3f36314bb0aecc939986094ad, type: 3}
+  - {fileID: -916353904096199786, guid: 1b2844a3f36314bb0aecc939986094ad, type: 3}
+  - {fileID: -6505693484958058361, guid: 1b2844a3f36314bb0aecc939986094ad, type: 3}
+  - {fileID: -306047486400715347, guid: 1b2844a3f36314bb0aecc939986094ad, type: 3}
+  - {fileID: 1419031074656033019, guid: 1b2844a3f36314bb0aecc939986094ad, type: 3}
+  - {fileID: -4663057329934762031, guid: 1b2844a3f36314bb0aecc939986094ad, type: 3}
+  - {fileID: 5575296373174476848, guid: 1b2844a3f36314bb0aecc939986094ad, type: 3}
+  attackImages:
+  - {fileID: -6291248960267088605, guid: 34c7dc3c8a3934941994a126a751d969, type: 3}
+  - {fileID: -8672997323148696045, guid: 34c7dc3c8a3934941994a126a751d969, type: 3}
+  - {fileID: -8652525099554990787, guid: 34c7dc3c8a3934941994a126a751d969, type: 3}
+  - {fileID: 2996434378565669703, guid: 34c7dc3c8a3934941994a126a751d969, type: 3}
+  - {fileID: 4170086375571462156, guid: 34c7dc3c8a3934941994a126a751d969, type: 3}
+  - {fileID: 7212114335117767103, guid: 34c7dc3c8a3934941994a126a751d969, type: 3}
+  - {fileID: 8430879332504333780, guid: 34c7dc3c8a3934941994a126a751d969, type: 3}
+  - {fileID: -5482117514795262042, guid: 34c7dc3c8a3934941994a126a751d969, type: 3}
+  - {fileID: 7046541510271945632, guid: 34c7dc3c8a3934941994a126a751d969, type: 3}
+  - {fileID: -1255986056582505246, guid: 34c7dc3c8a3934941994a126a751d969, type: 3}
+  - {fileID: 8539078910931261622, guid: 34c7dc3c8a3934941994a126a751d969, type: 3}
+  - {fileID: 7750314472173895694, guid: 34c7dc3c8a3934941994a126a751d969, type: 3}
+  - {fileID: 9051081621845199427, guid: 34c7dc3c8a3934941994a126a751d969, type: 3}
+  - {fileID: -4438750537426972648, guid: 34c7dc3c8a3934941994a126a751d969, type: 3}
   fps: 6
 --- !u!895512359 &978970539776636261
 AimConstraint:
@@ -127,7 +150,7 @@ AimConstraint:
   m_Sources:
   - sourceTransform: {fileID: 0}
     weight: 1
---- !u!114 &2828447877907621315
+--- !u!114 &8514459217222489288
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -198,7 +221,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8053133324172722944}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.789, y: -0.25, z: 17.567}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.8, y: 1.4, z: 1.8}
   m_Children:
   - {fileID: 8053133323487548297}
@@ -245,8 +268,8 @@ MonoBehaviour:
   timeBetweenAttacks: 0.7
   alreadyAttacked: 0
   sightRange: 20
-  attackRange: 0.8
-  meleeRange: 2.2
+  attackRange: 1.8
+  meleeRange: 2.5
   playerInSightRange: 0
   playerInAttackRange: 0
 --- !u!195 &8053133324172722951

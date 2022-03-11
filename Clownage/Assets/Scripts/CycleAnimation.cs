@@ -5,6 +5,8 @@ using UnityEngine;
 public class CycleAnimation : MonoBehaviour
 {
     public Sprite[] imagesToCycle;
+    public Sprite[] neutralImages;
+    public Sprite[] attackImages;
     public double fps;
 
     private SpriteRenderer spriteRenderer;
@@ -12,7 +14,7 @@ public class CycleAnimation : MonoBehaviour
     private int frameIdx = 0;
     private double lastFrameTime = 0;
     private double animFrameTime = 1;
-
+    /*
     void incrementAnimFrame(float t)
     {
         if (imagesToCycle.Length <= 0)
@@ -41,6 +43,7 @@ public class CycleAnimation : MonoBehaviour
         lastFrameTime = t;
         Debug.Log(frameIdx);
     }
+    */
 
     // Start is called before the first frame update
     void Start()

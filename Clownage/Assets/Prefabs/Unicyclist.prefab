@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7810022969035777579}
   - component: {fileID: 6911079366607557233}
   - component: {fileID: 134781476984876382}
+  - component: {fileID: 3781464211817030201}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 912027818639142361}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalPosition: {x: 0, y: 1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5808710572413208189}
@@ -96,11 +97,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imagesToCycle:
-  - {fileID: 6935937787231638790, guid: 0fffdb4ef37269f40b519edc26de88c6, type: 3}
-  - {fileID: -4226838602080573732, guid: 0fffdb4ef37269f40b519edc26de88c6, type: 3}
-  - {fileID: 1513763955993852908, guid: 0fffdb4ef37269f40b519edc26de88c6, type: 3}
-  - {fileID: -3707802418935068004, guid: 0fffdb4ef37269f40b519edc26de88c6, type: 3}
+  - {fileID: -8217099834785022017, guid: ec1eb51512fbb49f0ad2128b4af02c9d, type: 3}
+  - {fileID: -689290778115425147, guid: ec1eb51512fbb49f0ad2128b4af02c9d, type: 3}
+  - {fileID: -6361995652846913067, guid: ec1eb51512fbb49f0ad2128b4af02c9d, type: 3}
+  - {fileID: -3944558982241530937, guid: ec1eb51512fbb49f0ad2128b4af02c9d, type: 3}
+  - {fileID: 7273210227503503053, guid: ec1eb51512fbb49f0ad2128b4af02c9d, type: 3}
+  - {fileID: 5581078859933533576, guid: ec1eb51512fbb49f0ad2128b4af02c9d, type: 3}
+  neutralImages:
+  - {fileID: -8217099834785022017, guid: ec1eb51512fbb49f0ad2128b4af02c9d, type: 3}
+  - {fileID: -689290778115425147, guid: ec1eb51512fbb49f0ad2128b4af02c9d, type: 3}
+  - {fileID: -6361995652846913067, guid: ec1eb51512fbb49f0ad2128b4af02c9d, type: 3}
+  - {fileID: -3944558982241530937, guid: ec1eb51512fbb49f0ad2128b4af02c9d, type: 3}
+  - {fileID: 7273210227503503053, guid: ec1eb51512fbb49f0ad2128b4af02c9d, type: 3}
+  - {fileID: 5581078859933533576, guid: ec1eb51512fbb49f0ad2128b4af02c9d, type: 3}
+  attackImages:
+  - {fileID: 2827001807888971727, guid: 0e155f6a46d3d4421af2663f2060d499, type: 3}
+  - {fileID: 7177216674727230108, guid: 0e155f6a46d3d4421af2663f2060d499, type: 3}
+  - {fileID: 6710219873358973356, guid: 0e155f6a46d3d4421af2663f2060d499, type: 3}
+  - {fileID: 3380001429080552351, guid: 0e155f6a46d3d4421af2663f2060d499, type: 3}
   fps: 4
+--- !u!114 &3781464211817030201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912027818639142361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c353c30b5b62842caabca65d6177a3b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5808710572021225839
 GameObject:
   m_ObjectHideFlags: 0
@@ -240,12 +267,6 @@ MonoBehaviour:
   radialDirection: 1
   radPointSet: 0
   attackMode: circling
-  sprites:
-  - {fileID: 6935937787231638790, guid: 0fffdb4ef37269f40b519edc26de88c6, type: 3}
-  - {fileID: -4226838602080573732, guid: 0fffdb4ef37269f40b519edc26de88c6, type: 3}
-  - {fileID: 1513763955993852908, guid: 0fffdb4ef37269f40b519edc26de88c6, type: 3}
-  - {fileID: -3707802418935068004, guid: 0fffdb4ef37269f40b519edc26de88c6, type: 3}
-  fps: 4
 --- !u!114 &6684086178840953517
 MonoBehaviour:
   m_ObjectHideFlags: 0
