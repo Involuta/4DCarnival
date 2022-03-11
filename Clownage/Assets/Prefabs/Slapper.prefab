@@ -107,7 +107,7 @@ MonoBehaviour:
   alreadyAttacked: 0
   sightRange: 20
   attackRange: 0.8
-  meleeRange: 1.75
+  meleeRange: 2.5
   playerInSightRange: 0
   playerInAttackRange: 0
 --- !u!195 &8506586579582922453
@@ -258,6 +258,7 @@ MonoBehaviour:
   - {fileID: -4517447319086799401, guid: 06de9735a26ec452d896fcd6db3f3071, type: 3}
   - {fileID: 1580438785262875613, guid: 06de9735a26ec452d896fcd6db3f3071, type: 3}
   fps: 6
+  spriteRenderer: {fileID: 0}
 --- !u!895512359 &1466218543492978871
 AimConstraint:
   m_ObjectHideFlags: 0

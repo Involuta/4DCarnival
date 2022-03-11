@@ -8,6 +8,7 @@ public class UnicyclistAnimation : MonoBehaviour
 {
     private Transform player;
     private NavMeshAgent ai;
+    private UnicyclistBehavior unicEnemy;
     private CycleAnimation animator;
 
     // Start is called before the first frame update
@@ -15,6 +16,7 @@ public class UnicyclistAnimation : MonoBehaviour
     {
         player = GameObject.Find("PlayerCapsule").transform;
         ai = gameObject.GetComponentInParent<NavMeshAgent>();
+        unicEnemy = gameObject.GetComponentInParent<UnicyclistBehavior>();
         animator = gameObject.GetComponent<CycleAnimation>();
     }
 
@@ -32,6 +34,15 @@ public class UnicyclistAnimation : MonoBehaviour
         else
         {
             animator.imagesToCycle = animator.neutralImages;
+        }
+
+        if (unicEnemy.radialDirection == 1)
+        {
+            animator.spriteRenderer.flipX = true;
+        }
+        else
+        {
+            animator.spriteRenderer.flipX = false;
         }
     }
 }

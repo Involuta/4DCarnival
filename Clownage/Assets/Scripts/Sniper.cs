@@ -54,7 +54,7 @@ namespace StarterAssets
         }
         IEnumerator Reload()
         {
-            ammoDisplay.text = "RELOADING";
+            ammoDisplay.text = "-- / --";
             reloading = true;
             yield return new WaitForSeconds(reloadSpeed);
 

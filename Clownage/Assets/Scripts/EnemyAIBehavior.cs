@@ -102,11 +102,8 @@ public class EnemyAIBehavior : MonoBehaviour
         //Check if the player is in range
         if (Physics.Raycast(transform.position, transform.forward, out hit, meleeRange, whatIsPlayer))
         {
-            if(hit.rigidbody.tag == "Player")
-            {
-                Debug.Log("Player Hit by Slapper");
-                hit.rigidbody.GetComponent<TakeDamage>().TakeDamageNow(damage);
-            }
+            Debug.Log("Bonk");
+            hit.rigidbody.GetComponent<TakeDamage>().TakeDamageNow(damage);
         }
         ResetAttack();
     }

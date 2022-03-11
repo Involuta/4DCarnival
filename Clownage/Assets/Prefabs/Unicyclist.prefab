@@ -300,6 +300,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 20
+  scoreObj: {fileID: 0}
 --- !u!212 &1648527884513014340
 SpriteRenderer:
   m_ObjectHideFlags: 0

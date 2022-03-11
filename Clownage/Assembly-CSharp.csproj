@@ -84,6 +84,8 @@
     <Compile Include="Assets/Scripts/UnicyclistAttack.cs" />
     <Compile Include="Assets/Scripts/UnicyclistBehavior.cs" />
     <Compile Include="Assets/Scripts/GunAnimation.cs" />
+    <Compile Include="Assets/Scripts/StoreScores.cs" />
+    <Compile Include="Assets/Scripts/ShowScores.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />

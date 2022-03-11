@@ -25,6 +25,10 @@ public class TakeDamage : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+        if (Scores.yourScore > Scores.highScore)
+        {
+            Scores.highScore = Scores.yourScore;
+        }
         SceneManager.LoadScene("GameOver");
     }
 }

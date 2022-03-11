@@ -9,7 +9,7 @@ public class CycleAnimation : MonoBehaviour
     public Sprite[] attackImages;
     public double fps;
 
-    private SpriteRenderer spriteRenderer;
+    public SpriteRenderer spriteRenderer;
     private bool forwardAnimation = true;
     private int frameIdx = 0;
     private double lastFrameTime = 0;

@@ -56,7 +56,7 @@ public class SpawningEnemies : MonoBehaviour
     }
     async Task SpawnEnemy()
     {
-        int enemySelector = r.Next(1, 7);
+        int enemySelector = r.Next(1, 8);
 
         if (1 <= enemySelector && enemySelector <= 4)
         {
