@@ -79,10 +79,11 @@
     <Compile Include="Assets/Scripts/SlapperAnimation.cs" />
     <Compile Include="Assets/Scripts/Gun.cs" />
     <Compile Include="Assets/Scripts/SparkDelete.cs" />
+    <Compile Include="Assets/Scripts/UnicyclistAnimation.cs" />
     <Compile Include="Assets/Scripts/CycleAnimation.cs" />
     <Compile Include="Assets/Scripts/UnicyclistAttack.cs" />
     <Compile Include="Assets/Scripts/UnicyclistBehavior.cs" />
-    <Compile Include="Assets/Scripts/UnicyclistAnimation.cs" />
+    <Compile Include="Assets/Scripts/GunAnimation.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />

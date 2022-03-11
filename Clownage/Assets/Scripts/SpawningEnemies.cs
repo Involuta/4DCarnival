@@ -60,11 +60,11 @@ public class SpawningEnemies : MonoBehaviour
 
         if (1 <= enemySelector && enemySelector <= 4)
         {
-            enemy = Instantiate(bigboi, GetComponent<Transform>().position, GetComponent<Transform>().rotation);
+            enemy = Instantiate(slapper, GetComponent<Transform>().position, GetComponent<Transform>().rotation);
         }
         if (5 <= enemySelector && enemySelector <= 6)
         {
-            enemy = Instantiate(bigboi, GetComponent<Transform>().position, GetComponent<Transform>().rotation);
+            enemy = Instantiate(unicyclist, GetComponent<Transform>().position, GetComponent<Transform>().rotation);
         }
         if (enemySelector == 7)
         {

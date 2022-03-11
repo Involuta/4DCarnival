@@ -7,12 +7,13 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame()
     {
-        Debug.Log("code runs");
+        Cursor.lockState = CursorLockMode.Locked;
         SceneManager.LoadScene("Playground");
     }
 
     public void ReturnToMenu()
     {
+        Cursor.lockState = CursorLockMode.None;
         SceneManager.LoadScene("MainMenu");
     }
 

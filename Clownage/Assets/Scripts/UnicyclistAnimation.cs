@@ -25,7 +25,7 @@ public class UnicyclistAnimation : MonoBehaviour
 
         //if the unicyclist's velocity is to the side compared to how the player's facing, make the cyclist turn to the side.
         //otherwise, face forward
-        if (dotProduct <= Mathf.Cos(5*Mathf.PI/5.5f) || dotProduct >= Mathf.Cos(Mathf.PI/5.5f))
+        if (dotProduct <= Mathf.Cos(4*Mathf.PI/5f) || dotProduct >= Mathf.Cos(Mathf.PI/5f))
         {
             animator.imagesToCycle = animator.attackImages;
         }

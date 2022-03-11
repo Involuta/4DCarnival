@@ -43,7 +43,8 @@ namespace StarterAssets
         {
             if (reloading)
             {
-                Debug.Log("am i real?");
+                Debug.Log("Mag:" + magazine);
+                Debug.Log("Reserve:" + reserveAmmo);
                 return;
             }
             if (_input.shoot && !_input.isPaused && Time.time >= timeUntilShoot && magazine > 0)
@@ -62,7 +63,7 @@ namespace StarterAssets
 
         IEnumerator Reload()
         {
-            ammoDisplay.text = "RELOADING";
+            ammoDisplay.text = "-- / --";
             reloading = true;
             yield return new WaitForSeconds(reloadSpeed);
 

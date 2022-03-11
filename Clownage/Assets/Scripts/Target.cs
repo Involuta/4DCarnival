@@ -1,10 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Target : MonoBehaviour
 {
     public float health = 10f;
+    public GameObject scoreObj;
+    //public TextMeshProUGUI scoreText
+
+    void Start()
+    {
+        
+    }
 
     public void TakeDamage(float damage)
     {
@@ -12,10 +20,10 @@ public class Target : MonoBehaviour
         if (health <= 0){
             Die();
         }
-        Debug.Log(gameObject.name + " says ow");
     }
 
     public void Die(){
+        //scoreText.text = $"Clowns Eliminated: {pts}";
         Destroy(gameObject);
     }
 }

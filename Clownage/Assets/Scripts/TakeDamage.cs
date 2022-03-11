@@ -23,6 +23,8 @@ public class TakeDamage : MonoBehaviour
     }
     private void DestroyTarget()
     {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         SceneManager.LoadScene("GameOver");
     }
 }
